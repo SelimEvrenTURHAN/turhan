@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selim Evren Turhan | BÖTE Öğretmeni Portfolyo</title>
+    <!-- Tailwind CSS Yüklemesi -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Slate-900: Koyu dijital arka plan */
+            color: #e2e8f0; /* Slate-200: Açık metin */
+        }
+        /* Özel Neon Glow Shadow Tanımı */
+        .shadow-neon-sm {
+            box-shadow: 0 0 5px #06b6d4, 0 0 10px rgba(6, 182, 212, 0.3); /* Cyan-500 Neon */
+        }
+        .shadow-neon-lg {
+            box-shadow: 0 0 15px #06b6d4, 0 0 30px rgba(6, 182, 212, 0.5);
+        }
+
+        /* Dijital Temaya Uygun Başlık Ayırıcı */
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px; 
+            height: 4px;
+            background-color: #06b6d4; /* Cyan-500 */
+            margin: 12px auto 40px auto; 
+            box-shadow: 0 0 8px #06b6d4; /* Glow added */
+        }
+
+        /* Card Hover ve Animasyon Efekti için Temel Sınıf */
+        .digital-card {
+            transition: all 0.3s ease-in-out;
+            border: 1px solid rgba(45, 212, 191, 0.1); /* Teal border */
+        }
+
+        .digital-card:hover {
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 0 15px #06b6d4, 0 0 30px rgba(6, 182, 212, 0.4);
+            border-color: #06b6d4;
+        }
+    </style>
+</head>
+<body class="text-slate-200">
+
+    <!-- Ana Konteyner -->
+    <div id="app" class="min-h-screen">
+
+        <!-- Header / Navigasyon (Koyu Tema) -->
+        <header class="bg-slate-900 shadow-2xl sticky top-0 z-10 border-b border-cyan-700/50">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-extrabold text-cyan-400 tracking-widest hover:text-cyan-300 transition duration-300">
+                    SELIM TURHAN
+                </a>
+                <div class="space-x-6 hidden md:flex">
+                    <a href="#hakkimda" class="text-slate-300 hover:text-cyan-400 transition duration-150 transform hover:scale-105">Hakkımda</a>
+                    <a href="#uzmanliklar" class="text-slate-300 hover:text-cyan-400 transition duration-150 transform hover:scale-105">Uzmanlıklar</a>
+                    <a href="#projeler" class="text-slate-300 hover:text-cyan-400 transition duration-150 transform hover:scale-105">Projeler</a>
+                    <a href="#iletisim" class="text-slate-300 hover:text-cyan-400 transition duration-150 transform hover:scale-105">İletişim</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- 1. Hero / Giriş Bölümü -->
+        <section id="hakkimda" class="pt-24 pb-36 bg-gradient-to-br from-slate-900 to-gray-900 border-b-4 border-cyan-600/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="mb-10">
+                    <!-- Profesyonel Profil Resmi Placeholder (Daha Güçlü Neon Çerçeve) -->
+                    <div class="mx-auto w-40 h-40 bg-cyan-800/20 rounded-full flex items-center justify-center border-4 border-cyan-400 shadow-neon-sm">
+                        <!-- SVG Icon (Daha Teknolojik) -->
+                        <svg class="w-20 h-20 text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                </div>
+                <h2 class="text-xl font-medium text-cyan-400 mb-3 tracking-widest animate-pulse">CONNECTION ESTABLISHED</h2>
+                <h1 class="text-7xl font-extrabold text-white mb-6 tracking-tight">
+                    SELİM EVREN TURHAN
+                </h1>
+                <p class="text-2xl text-slate-400 max-w-4xl mx-auto">
+                    BÖTE Öğretmeni | Donanım, Yapay Zeka, Proje ve Stratejik Planlama Alanlarında Uzmanlaşmış Teknoloji Mimarı.
+                </p>
+                <div class="mt-12">
+                    <a href="#uzmanliklar" class="inline-flex items-center px-10 py-4 text-lg font-bold rounded-xl text-slate-900 bg-cyan-400 hover:bg-cyan-300 transition duration-500 transform hover:scale-105 shadow-neon-lg">
+                        UZMANLIK MATRİSİNİ GÖRÜNTÜLE &gt;&gt;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Uzmanlık Alanları Bölümü -->
+        <section id="uzmanliklar" class="py-24 bg-slate-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title text-4xl font-bold text-white text-center">Uzmanlık Alanı Protokolleri</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- 1. Donanım ve Yazılım -->
+                    <div class="digital-card p-6 bg-slate-800/70 rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="text-cyan-400 mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25M7.25 17h9.5M3 7h18a2 2 0 012 2v6a2 2 0 01-2 2H3a2 2 0 01-2-2V9a2 2 0 012-2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Donanım & Yazılım Yönetimi</h3>
+                        <p class="text-slate-400">
+                            Eğitim ortamlarında etkin donanım (ağ, sunucu, uç cihazlar) kurulumu, bakımı ve optimizasyonu. Öğrenme yönetim sistemleri ve eğitim yazılımlarının (Python, Web Teknolojileri, vb.) entegrasyonu.
+                        </p>
+                    </div>
+
+                    <!-- 2. Yapay Zeka (AI) -->
+                    <div class="digital-card p-6 bg-slate-800/70 rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="text-green-400 mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 10h2m10 0h2M3 14h2m10 0h2M1 18h2m10 0h2M7 5a2 2 0 012-2h6a2 2 0 012 2v14a2 2 0 01-2 2H9a2 2 0 01-2-2V5z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Yapay Zeka (AI) Entegrasyonu</h3>
+                        <p class="text-slate-400">
+                            Eğitimde yapay zeka araçlarının kullanımı, öğrenci performans analizinde AI modellerinin uygulanması ve kişiselleştirilmiş öğrenme deneyimleri tasarlama.
+                        </p>
+                    </div>
+
+                    <!-- 3. Proje Geliştirme ve Yönetimi -->
+                    <div class="digital-card p-6 bg-slate-800/70 rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="text-purple-400 mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 012 2v1h5.5a2.5 2.5 0 012.5 2.5v7.5a2 2 0 01-2 2H5a2 2 0 01-2-2v-7.5a2.5 2.5 0 012.5-2.5H11V6a2 2 0 012-2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Proje Geliştirme ve Yönetimi</h3>
+                        <p class="text-slate-400">
+                            Yerel, ulusal ve uluslararası (örn. Erasmus+) fonlara yönelik proje fikirleri geliştirme, hibe başvuruları yazma ve uygulama süreçlerini koordine etme.
+                        </p>
+                    </div>
+
+                    <!-- 4. Stratejik Planlama -->
+                    <div class="digital-card p-6 bg-slate-800/70 rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="text-yellow-400 mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 00-2 2v3m2-3a2 2 0 012 2v3m-3 3h6M9 13h6M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Stratejik Plan & Brifing</h3>
+                        <p class="text-slate-400">
+                            Eğitim kurumları için teknoloji entegrasyonu odaklı stratejik planların hazırlanması, üst yönetime bilişim brifingleri sunulması ve yol haritası belirlenmesi.
+                        </p>
+                    </div>
+
+                    <!-- 5. Akademik/Araştırma İzinleri -->
+                    <div class="digital-card p-6 bg-slate-800/70 rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="text-red-400 mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0v4m-5 4h2a4 4 0 004-4v-1.5a2.5 2.5 0 00-2.5-2.5h-3A2.5 2.5 0 006 12.5v1.5a4 4 0 004 4z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Akademik/Araştırma İzinleri</h3>
+                        <p class="text-slate-400">
+                            Eğitim araştırmaları ve veri toplama süreçlerinde gerekli olan resmi izinlerin (MEB vb.) alınması konusunda danışmanlık ve süreç yönetimi deneyimi.
+                        </p>
+                    </div>
+
+                    <!-- 6. Web ve Uygulama Yazılımı -->
+                    <div class="digital-card p-6 bg-slate-800/70 rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="text-blue-400 mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 4l-4 4 4 4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Web ve Uygulama Yazılımı</h3>
+                        <p class="text-slate-400">
+                            Web tabanlı uygulamalar, öğrenme araçları ve özel yazılımların geliştirilmesi. Kullanıcı odaklı (UX/UI) çözümlerle öğrenme verimliliğini artırma.
+                        </p>
+                    </div>
+                    
+                    <!-- 7. TÜBİTAK Proje Danışmanlığı (YENİ) -->
+                    <div class="digital-card p-6 bg-slate-800/70 rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="text-indigo-400 mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1v-3.25M7.25 17h9.5M3 7h18a2 2 0 012 2v6a2 2 0 01-2 2H3a2 2 0 01-2-2V9a2 2 0 012-2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">TÜBİTAK Proje Danışmanlığı</h3>
+                        <p class="text-slate-400">
+                            Ortaokul ve lise düzeyinde 4006/2204 projeleri için danışmanlık, bilimsel araştırma metodolojisi rehberliği ve raporlama süreçlerinin yönetilmesi.
+                        </p>
+                    </div>
+
+                    <!-- 8. Teknofest Yarışmaları Koordinasyonu (YENİ) -->
+                    <div class="digital-card p-6 bg-slate-800/70 rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="text-pink-400 mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Teknofest Yarışmaları Koordinasyonu</h3>
+                        <p class="text-slate-400">
+                            Öğrenci takımlarının Yazılım, Yapay Zeka, İnsansız Hava Araçları (İHA) gibi kategorilerde proje geliştirmelerine liderlik etme ve mentörlük yapma.
+                        </p>
+                    </div>
+
+                    <!-- 9. eTwinning Proje Liderliği (YENİ) -->
+                    <div class="digital-card p-6 bg-slate-800/70 rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="text-orange-400 mb-3">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white mb-2">eTwinning Proje Liderliği</h3>
+                        <p class="text-slate-400">
+                            Avrupa okulları arasında işbirliği projeleri oluşturma, uluslararası ortaklarla iletişim kurma ve proje süreçlerini yöneterek kalite etiketi alma.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Projeler Bölümü -->
+        <section id="projeler" class="py-24 bg-slate-800 border-t border-b border-cyan-700/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="section-title text-4xl font-bold text-white text-center">Yönetilen Proje Logları</h2>
+
+                <div class="space-y-10">
+
+                    <!-- Proje 1: Uluslararası Yapay Zeka Projesi -->
+                    <div class="digital-card bg-slate-700/50 p-6 rounded-xl shadow-xl md:flex items-start">
+                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                            <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-cyan-600 text-white font-bold text-xl shadow-neon-sm">
+                                AI
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">Uluslararası Eğitimde Yapay Zeka</h3>
+                            <p class="text-sm font-medium text-cyan-400 mb-3">Uluslararası Proje | 2023-2025</p>
+                            <p class="text-slate-300">
+                                Çok uluslu ortaklarla yürütülen, lise öğrencileri için kişiselleştirilmiş öğrenme yolları sunan bir AI tabanlı değerlendirme sistemi geliştirilmesi. Proje, 3 farklı ülkenin eğitim sistemine entegrasyonu hedeflemiştir.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Proje 2: Yerel Donanım ve Ağ Altyapısı Yenileme -->
+                    <div class="digital-card bg-slate-700/50 p-6 rounded-xl shadow-xl md:flex items-start">
+                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                            <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-green-600 text-white font-bold text-xl shadow-neon-sm">
+                                HW
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">Okul Ağ Altyapısı ve Laboratuvar Modernizasyonu</h3>
+                            <p class="text-sm font-medium text-green-400 mb-3">Yerel Proje | 2022</p>
+                            <p class="text-slate-300">
+                                Okulun tüm bilişim laboratuvarlarının sıfırdan planlanması, enerji verimli donanımla güncellenmesi ve fiber optik omurga üzerine kurulu güvenli bir yerel ağ (LAN) altyapısının kurulması.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Proje 3: Kurumsal Stratejik Plan Dokümantasyonu -->
+                    <div class="digital-card bg-slate-700/50 p-6 rounded-xl shadow-xl md:flex items-start">
+                        <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                            <span class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-yellow-600 text-white font-bold text-xl shadow-neon-sm">
+                                SP
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">2024-2028 Kurumsal Teknoloji Stratejik Planı</h3>
+                            <p class="text-sm font-medium text-yellow-400 mb-3">Ulusal Çalışma | Stratejik Plan</p>
+                            <p class="text-slate-300">
+                                Kurumun gelecek 4 yıllık bilişim hedeflerini, bütçe öngörülerini ve dijital dönüşüm adımlarını içeren detaylı stratejik planın hazırlanması ve üst birimlere sunulması.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. İletişim ve Çağrı Bölümü (Daha Vurgulu) -->
+        <section id="iletisim" class="py-24 bg-slate-900">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white p-8 rounded-xl bg-cyan-700/20 border-2 border-cyan-500 shadow-neon-sm">
+                <h2 class="text-4xl font-bold mb-4 text-cyan-400">Sistem Bağlantısı Kur</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Siber güvenlik, proje geliştirme veya stratejik teknoloji danışmanlığı konularında işbirliği için hemen veri transferi başlatın.
+                </p>
+                <!-- E-posta adresi görünmeyecek şekilde sadece mailto bağlantısı güncellendi -->
+                <a href="mailto:selimturhan9@gmail.com" class="inline-flex items-center px-10 py-4 text-lg font-bold rounded-xl text-slate-900 bg-cyan-400 hover:bg-cyan-300 transition duration-500 transform hover:scale-110 shadow-neon-lg">
+                    VERİ TRANSFERİ BAŞLAT (E-POSTA)
+                </a>
+                <!-- E-posta adresi gizlendiği için bu kısım kaldırıldı. -->
+            </div>
+        </section>
+
+        <!-- Footer (Siyah) -->
+        <footer class="bg-slate-950 text-slate-500 py-6 border-t border-cyan-700/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+                <p>&copy; 2024 Selim Evren Turhan | BÖTE Portfolyo. Tüm hakları saklıdır. Protokol Sürümü 1.2</p>
+                <div class="mt-2 space-x-4">
+                    <a href="#hakkimda" class="hover:text-cyan-400">Ana Protokol</a>
+                    <a href="#" class="hover:text-cyan-400">Gizlilik Verileri</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
